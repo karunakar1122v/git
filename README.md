@@ -39,3 +39,16 @@
  * [Working Copy ] Create a  new file- Add the file [ git add Staging] - Commit changes [ Repository]
  * Each commits geneartes checksum 40 digit numebr to track. It is called commit id
  * HEAD points to the last commit id
+ 
+# Git 
+
+ * git diff - Shows the changes with the previous versions in the working copy
+ * git diff file_name - Shows the changes with the previous version in the working copy
+ * git diff --staged - shows the changes in the staging not working copy
+ * git diff --staged file_name - Shows the changes in the staging not working copy
+ * git rm file_name - remove deleted file from staging. [Also deletes the file from working directory ]
+ * After rename the file manualy git status shows old file deleted & new file with new name got added in the working direcory
+ * After adding the new filein the stagin it shows Rename
+ * git mv old_file_name.txt new_file_name.txt - It directly shows rename [ no need of adding & it directly goes to staging]
+ * git diff --color-words file_anme.txt - Shows the changes in the color diffrerence not as a two diffrent lines
+ * git commit -a -m "Commit message" - It adds + commits by single command [ It must be a parent directory.Deleting files not calculated]
