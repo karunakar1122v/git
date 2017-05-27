@@ -40,7 +40,7 @@
  * Each commits geneartes checksum 40 digit numebr to track. It is called commit id
  * HEAD points to the last commit id
  
-# Git 
+# Git commands
 
  * git diff - Shows the changes with the previous versions in the working copy
  * git diff file_name - Shows the changes with the previous version in the working copy
@@ -52,3 +52,14 @@
  * git mv old_file_name.txt new_file_name.txt - It directly shows rename [ no need of adding & it directly goes to staging]
  * git diff --color-words file_anme.txt - Shows the changes in the color diffrerence not as a two diffrent lines
  * git commit -a -m "Commit message" - It adds + commits by single command [ It must be a parent directory.Deleting files not calculated]
+
+# GIT Undo Chnages
+
+ * git checkout - Undo changes & take the fresh copy from branch
+ * git checkout -- file_name or foler_name - Here "--" indicates it is not a branch. It removes the working copy & checkout the file or folder from repo
+ * git reset HEAD file_name or folder_name - undo changes of files or folder it went to staging.
+ * Undo of chnages in the last commit is editable but before last commit is not possible.
+ * git commit --amend -m "commit msg" - it igonres the previous commit for that particular file & commits the new changes
+ * git checkout dsb8s7sd98dh87qw8 -- file_name or folder_name - checkout the older versions of file
+ * git revert h8732h387dsdfs8s78fds - It reverts all changes made in that commit & commits the new commit
+ * 
