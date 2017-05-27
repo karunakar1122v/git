@@ -62,4 +62,13 @@
  * git commit --amend -m "commit msg" - it igonres the previous commit for that particular file & commits the new changes
  * git checkout dsb8s7sd98dh87qw8 -- file_name or folder_name - checkout the older versions of file
  * git revert h8732h387dsdfs8s78fds - It reverts all changes made in that commit & commits the new commit
- * 
+ * RESET :
+    * soft - Does not chage stage index or working directory
+    * mixed[Default] - Does not change the working directory
+    * hard - chnages staging index & working directory to match the revision head
+  * cat .git/HEAD - Shows the head ref [ .git/refs/heads/master & this show last commit hash value]
+  * git reset --soft HASH_value - it changes pointer to that head [ not changing working copy & Staging index ]
+  * git reset --mixed HASH_value - It changes the pointer to that head [ changing stagind index not working directory ]
+  * git reset --hard HASH_value - It chnages the pointer to that head [ changing the working directory + staging index to match repo]
+  * git clean -n - shows what are the untracked files going to remove 
+  * git clean -f - removes untracked files in the working directory. If the files goes to staging index it will not delete
