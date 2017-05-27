@@ -1,4 +1,4 @@
-# git for beginners
+# GIT for beginners
 
   * Git is used to track the versions of files. It is a distributed version control system VCS
   * SCM - Source Code Management
@@ -53,7 +53,7 @@
  * git diff --color-words file_anme.txt - Shows the changes in the color diffrerence not as a two diffrent lines
  * git commit -a -m "Commit message" - It adds + commits by single command [ It must be a parent directory.Deleting files not calculated]
 
-# GIT Undo Chnages
+# GIT Undo Changes
 
  * git checkout - Undo changes & take the fresh copy from branch
  * git checkout -- file_name or foler_name - Here "--" indicates it is not a branch. It removes the working copy & checkout the file or folder from repo
@@ -72,3 +72,11 @@
   * git reset --hard HASH_value - It chnages the pointer to that head [ changing the working directory + staging index to match repo]
   * git clean -n - shows what are the untracked files going to remove 
   * git clean -f - removes untracked files in the working directory. If the files goes to staging index it will not delete
+  
+# Ignore files
+
+  * add .gitignore file & add the list of files & folders in regular expression format or normal way to ignore tracking
+  * Examples
+     * .php - ignore all php files
+     * !index.php - Don't ignore index.php file
+     * assets/videos/ - Ignore videos directory
